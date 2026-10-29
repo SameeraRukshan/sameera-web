@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sameera Rukshan — Chief Technology Officer | Engineering Leader & Systems Architect</title>
+  <meta name="description" content="Portfolio of Sameera Rukshan (Eng. W.M.S.R. Abewardhana) — Chief Technology Officer at Zonova Tech, Technical Expert at UNEP-CCC, and veteran Full-Stack Systems Architect with 11+ years of experience." />
+  <meta name="keywords" content="Sameera Rukshan, CTO Zonova Tech, Technical Architect, .NET Core, Microservices, UNEP CCC, Article 6, BestWeb.lk winner, Full Stack Leader" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sameera.zonova.lk/" />
+  <meta property="og:title" content="Sameera Rukshan — Chief Technology Officer | Engineering Leader" />
+  <meta property="og:description" content="Full-stack engineer, technical architect, and executive with over 11+ years leading enterprise web, mobile, and cloud software. CTO at Zonova Tech." />
+  <meta property="og:image" content="https://sameera.zonova.lk/images/sameera-portrait.webp" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CDN (Modern Tailwind Script) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+              gold: '#f59e0b',
+              electric: '#38bdf8'
+            },
+            dark: {
+              950: '#07090e',
+              900: '#0c1017',
+              850: '#111722',
+              800: '#172030',
+              700: '#222f46',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0c1017;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #222f46;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #16a34a;
+    }
+
+    .glass-card {
+      background: rgba(17, 23, 34, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .glass-card-hover:hover {
+      transform: translateY(-4px);
+      border-color: rgba(34, 197, 94, 0.35);
+      box-shadow: 0 12px 30px -10px rgba(34, 197, 94, 0.15);
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, #ffffff 20%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .brand-gradient {
+      background: linear-gradient(135deg, #4ade80 0%, #38bdf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .grid-pattern {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+  </style>
+</head>
+<body class="bg-dark-950 text-slate-200 font-sans selection:bg-brand-500 selection:text-dark-950 overflow-x-hidden">
+
+  <!-- Glow effect background -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/3 -right-40 w-96 h-96 bg-brand-electric/10 rounded-full blur-3xl"></div>
+    <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-brand-400 flex items-center justify-center font-display font-bold text-dark-950 text-xl shadow-lg shadow-brand-500/20 group-hover:scale-105 transition-transform">
+          SR
+        </div>
+        <div>
+          <span class="font-display font-bold text-white text-lg tracking-tight block">Sameera Rukshan</span>
+          <span class="text-xs font-mono text-brand-400">Chief Technology Officer</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-brand-400 transition-colors">About</a>
+        <a href="#experience" class="hover:text-brand-400 transition-colors">Experience</a>
+        <a href="#projects" class="hover:text-brand-400 transition-colors">Enterprise Systems</a>
+        <a href="#awards" class="hover:text-brand-400 transition-colors">Awards</a>
+        <a href="#education" class="hover:text-brand-400 transition-colors">Education & Credentials</a>
+        <a href="#skills" class="hover:text-brand-400 transition-colors">Skills</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="Sameera_Rukshan_CV.pdf" download class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-white/5 hover:bg-white/10 text-white border border-white/10 transition-all">
+          <svg class="w-4 h-4 text-brand-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          Download CV
+        </a>
+        <a href="#contact" class="px-5 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider bg-brand-500 hover:bg-brand-400 text-dark-950 shadow-lg shadow-brand-500/25 transition-all hover:scale-105">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative pt-36 pb-20 md:pt-48 md:pb-32 px-6 z-10 grid-pattern">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      
+      <!-- Left Column: Bio & Headings -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-xs font-mono font-medium">
+          <span class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
+          Available for Global Advisory & Technical Leadership
+        </div>
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold tracking-tight text-white leading-[1.1]">
+          Architecting Resilient Platforms. <br />
+          <span class="brand-gradient">Leading Global Tech.</span>
+        </h1>
+
+        <p class="text-base sm:text-lg text-slate-300 max-w-2xl font-light leading-relaxed">
+          I am <strong class="text-white font-medium">Sameera Rukshan</strong> (Eng. W.M.S.R. Abewardhana) — Chief Technology Officer at 
+          <a href="https://zonova.lk" target="_blank" class="text-brand-400 hover:underline">Zonova Tech</a>, 
+          SISEPUEDE Technical Expert for <strong class="text-white font-medium">UNEP Copenhagen Climate Centre</strong>, and a full-stack architect with 11+ years of experience leading engineering teams across the US, Sweden, Spain, Portugal, and Sri Lanka.
+        </p>
+
+        <!-- Stat Highlights -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-white/5">
+          <div>
+            <div class="font-display text-3xl font-bold text-white">11+</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider font-mono">Years Exp.</div>
+          </div>
+          <div>
+            <div class="font-display text-3xl font-bold text-brand-400">3x</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider font-mono">National Awards</div>
+          </div>
+          <div>
+            <div class="font-display text-3xl font-bold text-white">18+</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider font-mono">Major Systems</div>
+          </div>
+          <div>
+            <div class="font-display text-3xl font-bold text-brand-electric">IESL</div>
+            <div class="text-xs text-slate-400 uppercase tracking-wider font-mono">Chartered Assoc.</div>
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap items-center gap-4 pt-4">
+          <a href="#projects" class="px-6 py-3.5 rounded-xl font-semibold text-sm bg-brand-500 hover:bg-brand-400 text-dark-950 shadow-lg shadow-brand-500/25 transition-all">
+            Explore Enterprise Systems
+          </a>
+          <a href="https://linkedin.com/in/sameeraje" target="_blank" class="px-6 py-3.5 rounded-xl font-semibold text-sm bg-white/5 hover:bg-white/10 text-white border border-white/10 inline-flex items-center gap-2 transition-all">
+            <svg class="w-4 h-4 fill-current text-[#0077b5]" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Profile Portrait & Highlights Card -->
+      <div class="lg:col-span-5 relative flex justify-center">
+        <div class="relative w-full max-w-sm sm:max-w-md">
+          <!-- Ambient Glow Ring -->
+          <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-brand-500 to-brand-electric opacity-30 blur-xl"></div>
+          
+          <div class="relative rounded-3xl glass-card overflow-hidden p-3 border border-white/10 shadow-2xl">
+            <div class="aspect-[4/5] rounded-2xl overflow-hidden bg-dark-900 relative">
+              <img 
+                src="/images/sameera-portrait.webp" 
+                alt="Sameera Rukshan" 
+                class="w-full h-full object-cover object-center filter contrast-105"
+                onerror="this.src='/images/sameera-photo.png'"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-transparent to-transparent opacity-80"></div>
+              
+              <!-- Floating Badge Bottom -->
+              <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl glass-card border border-white/10">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h3 class="text-white font-bold font-display text-base">Sameera Rukshan</h3>
+                    <p class="text-xs text-brand-400 font-mono">CTO, Zonova Tech</p>
+                  </div>
+                  <span class="px-2.5 py-1 rounded-md text-[10px] font-mono uppercase tracking-wider bg-brand-500/20 text-brand-300 border border-brand-500/30">
+                    BSc Eng (Hons)
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About & Leadership Philosophy -->
+  <section id="about" class="py-24 px-6 relative z-10 border-t border-white/5 bg-dark-900/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <div class="lg:col-span-4 space-y-4">
+          <span class="text-brand-400 font-mono text-xs uppercase tracking-widest block font-semibold">Executive Leadership</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight">
+            Bridging Business Vision with High-Order Engineering
+          </h2>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            With more than a decade at the intersection of enterprise software architecture, cloud platforms, and engineering management, I design fault-tolerant systems that scale sustainably.
+          </p>
+          <div class="pt-4 space-y-3 font-mono text-xs text-slate-300">
+            <div class="flex items-center gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+              <span>Institution of Engineers Sri Lanka (AM-21837)</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+              <span>UNEP-CCC Article 6 Climate Modelling Expert</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-400"></span>
+              <span>Certified in Azure & Google AI Essentials</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="p-6 rounded-2xl glass-card glass-card-hover space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center font-mono font-bold text-lg">01</div>
+            <h3 class="text-lg font-bold text-white">Full-Lifecycle Architecture</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Extensive hands-on leadership across .NET Core, Microservices, Azure DevOps CI/CD, SignalR, Docker, and SQL performance tuning for high-throughput global applications.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl glass-card glass-card-hover space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-brand-electric/10 text-brand-electric flex items-center justify-center font-mono font-bold text-lg">02</div>
+            <h3 class="text-lg font-bold text-white">AI & Applied LLM Systems</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Architecting production applications integrating Google Gemini APIs, multimodal generative studios, and intelligent workflow automation powering live commerce.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl glass-card glass-card-hover space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-brand-gold/10 text-brand-gold flex items-center justify-center font-mono font-bold text-lg">03</div>
+            <h3 class="text-lg font-bold text-white">International Delivery</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Trusted engineering lead for major software firms delivering payroll SaaS for the US (PayCor), Swedish accounting (WINT), and European public systems (Metro Madrid).
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl glass-card glass-card-hover space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center font-mono font-bold text-lg">04</div>
+            <h3 class="text-lg font-bold text-white">Climate & Sustainability Tech</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Developing and running emissions and energy transformation modeling code (SISEPUEDE) with the UNEP Copenhagen Climate Centre for Sri Lanka's Paris Agreement commitments.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Career Timeline -->
+  <section id="experience" class="py-24 px-6 relative z-10">
+    <div class="max-w-5xl mx-auto space-y-16">
+      
+      <div class="text-center space-y-3">
+        <span class="text-brand-400 font-mono text-xs uppercase tracking-widest font-semibold">Career Milestones</span>
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight">Executive & Engineering Track Record</h2>
+        <p class="text-slate-400 text-sm max-w-xl mx-auto">A proven trajectory of leadership across enterprise tech giants, international consultancies, and innovative scale-ups.</p>
+      </div>
+
+      <div class="relative border-l border-white/10 ml-4 md:ml-32 space-y-12">
+        
+        <!-- Experience Item 1 -->
+        <div class="relative pl-8 md:pl-12 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-dark-950"></div>
+          <span class="md:absolute md:-left-32 md:top-1.5 text-xs font-mono text-brand-400 block mb-1 md:mb-0">Feb 2026 – Present</span>
+          <div class="p-6 rounded-2xl glass-card glass-card-hover space-y-2">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-xl font-bold text-white">Technical Expert (SISEPUEDE)</h3>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-brand-500/10 text-brand-300 font-mono">Contract / Advisory</span>
+            </div>
+            <div class="text-sm text-brand-400 font-medium">UNEP Copenhagen Climate Centre (UNEP-CCC)</div>
+            <p class="text-sm text-slate-300 leading-relaxed pt-1">
+              Contributor to the Integrated Assessment for Article 6 (IAA6) programme, supporting Sri Lanka's climate commitments and NDC implementations under the Paris Agreement. Develops and maintains code for the SISEPUEDE integrated assessment modelling framework, running emissions and energy transformation scenarios and preparing underlying datasets.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="relative pl-8 md:pl-12 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-dark-950"></div>
+          <span class="md:absolute md:-left-32 md:top-1.5 text-xs font-mono text-brand-400 block mb-1 md:mb-0">Mar 2025 – Present</span>
+          <div class="p-6 rounded-2xl glass-card glass-card-hover space-y-2">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-xl font-bold text-white">Chief Technology Officer (CTO)</h3>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-white/10 text-slate-300 font-mono">Full-time Executive</span>
+            </div>
+            <div class="text-sm text-brand-400 font-medium">Zonova Tech (Zonova Pvt Ltd)</div>
+            <p class="text-sm text-slate-300 leading-relaxed pt-1">
+              Directs overall technology strategy, architectural standards, product roadmaps, and engineering teams. Co-architected and launched <strong>zonova.lk</strong> (AI multi-vendor marketplace) and <strong>Rooms Hub</strong> (hospitality accommodation manager). Led engineering to win two National Web Awards at <strong>BestWeb.lk 2026</strong> and the <strong>Global Excellence Award</strong>.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience Item 3 -->
+        <div class="relative pl-8 md:pl-12 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-dark-950"></div>
+          <span class="md:absolute md:-left-32 md:top-1.5 text-xs font-mono text-slate-400 block mb-1 md:mb-0">Apr 2024 – Mar 2025</span>
+          <div class="p-6 rounded-2xl glass-card glass-card-hover space-y-2">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-xl font-bold text-white">Technical Lead</h3>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-white/5 text-slate-400 font-mono">Full-time</span>
+            </div>
+            <div class="text-sm text-slate-300 font-medium">Virtusa (Pvt) Ltd</div>
+            <p class="text-sm text-slate-300 leading-relaxed pt-1">
+              Technical Lead for <strong>PayCor Inc.</strong> (<a href="https://paycor.com" target="_blank" class="text-brand-400 hover:underline">paycor.com</a>), an enterprise US cloud payroll and HR financial platform. Led five software engineers adhering to strict MVC and microservice patterns, leveraging Azure DevOps Services to streamline CI/CD delivery and code quality gates.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience Item 4 -->
+        <div class="relative pl-8 md:pl-12 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-dark-950"></div>
+          <span class="md:absolute md:-left-32 md:top-1.5 text-xs font-mono text-slate-400 block mb-1 md:mb-0">Mar 2021 – Mar 2024</span>
+          <div class="p-6 rounded-2xl glass-card glass-card-hover space-y-2">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-xl font-bold text-white">Senior Software Engineer</h3>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-white/5 text-slate-400 font-mono">Full-time</span>
+            </div>
+            <div class="text-sm text-slate-300 font-medium">Creative Software</div>
+            <p class="text-sm text-slate-300 leading-relaxed pt-1">
+              Core engineer for <strong>WINT</strong> (<a href="https://wint.se" target="_blank" class="text-brand-400 hover:underline">wint.se</a>), Sweden's leading cloud automated accounting SaaS. Built microservices communicating over Azure Service Bus, implemented containerized Docker environments, designed React.js frontends, and developed Xamarin mobile app components.
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience Item 5 -->
+        <div class="relative pl-8 md:pl-12 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-dark-950"></div>
+          <span class="md:absolute md:-left-32 md:top-1.5 text-xs font-mono text-slate-400 block mb-1 md:mb-0">Feb 2018 – Feb 2021</span>
+          <div class="p-6 rounded-2xl glass-card glass-card-hover space-y-2">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-xl font-bold text-white">Technical Lead / Associate Tech Lead / SSE</h3>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-white/5 text-slate-400 font-mono">Full-time</span>
+            </div>
+            <div class="text-sm text-slate-300 font-medium">QualitApps Europe</div>
+            <p class="text-sm text-slate-300 leading-relaxed pt-1">
+              Guided European client solutions across Spain, Portugal, and Latvia. Spearheaded GesDoc (Three.js 3D medical visualizer), Ortomed (dental diagnostics suite), Motelink (smart hotel automation using Azure IoT Hub), and Geminys4 (Metro Madrid management system delivered a month ahead of schedule).
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience Item 6 -->
+        <div class="relative pl-8 md:pl-12 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-600 ring-4 ring-dark-950"></div>
+          <span class="md:absolute md:-left-32 md:top-1.5 text-xs font-mono text-slate-400 block mb-1 md:mb-0">May 2015 – Feb 2018</span>
+          <div class="p-6 rounded-2xl glass-card glass-card-hover space-y-2">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="text-xl font-bold text-white">Senior Software Engineer & Mobile Lead</h3>
+              <span class="text-xs px-2.5 py-1 rounded-md bg-white/5 text-slate-400 font-mono">Full-time</span>
+            </div>
+            <div class="text-sm text-slate-300 font-medium">Creo360 / Navotar Software</div>
+            <p class="text-sm text-slate-300 leading-relaxed pt-1">
+              Conceived and led development of <strong>Navotar Mobile</strong>, expanding market share into Singapore with Grab Taxi integrations. Architected ASP.NET Web API and OWIN OAuth security for car rental enterprise fleets.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Enterprise Systems Portfolio -->
+  <section id="projects" class="py-24 px-6 relative z-10 border-t border-white/5 bg-dark-900/40">
+    <div class="max-w-7xl mx-auto space-y-12">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div>
+          <span class="text-brand-400 font-mono text-xs uppercase tracking-widest font-semibold block">Enterprise Portfolio</span>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight">Mission-Critical Systems</h2>
+        </div>
+        <p class="text-slate-400 text-sm max-w-md">Highlighting enterprise platforms built for international clients across finance, health, public transport, and e-commerce.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Project 1: Zonova -->
+        <div class="p-6 rounded-2xl glass-card glass-card-hover flex flex-col justify-between space-y-4 border-brand-500/30">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-brand-400 px-2 py-0.5 rounded bg-brand-500/10">Flagship • 2025–Present</span>
+              <span class="text-xs font-mono text-brand-gold">National Winner</span>
+            </div>
+            <h3 class="text-xl font-bold text-white">Zonova Marketplace</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Multi-vendor AI e-commerce marketplace unifying cakes, flowers, clothing, and gifting. Features custom Gemini design studio, single unified checkout, passkeys, and Capacitor mobile companion.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/5 space-y-3">
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-300">
+              <span class="px-2 py-0.5 rounded bg-white/5">React</span>
+              <span class="px-2 py-0.5 rounded bg-white/5">TypeScript</span>
+              <span class="px-2 py-0.5 rounded bg-white/5">Firebase</span>
+              <span class="px-2 py-0.5 rounded bg-white/5">Gemini AI</span>
+            </div>
+            <a href="https://zonova.lk" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-400 hover:text-brand-300">
+              Visit zonova.lk &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: PayCor -->
+        <div class="p-6 rounded-2xl glass-card glass-card-hover flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5">US Enterprise • 2024–2025</span>
+              <span class="text-xs font-mono text-slate-400">Tech Lead</span>
+            </div>
+            <h3 class="text-xl font-bold text-white">PayCor Payroll & HR</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Enterprise US SaaS payroll and HR finance platform microservices architecture. Supervised five software developers adhering to strict MVC, unit testing, and Azure CI/CD pipelines.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/5 space-y-3">
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-300">
+              <span class="px-2 py-0.5 rounded bg-white/5">ASP.NET Core</span>
+              <span class="px-2 py-0.5 rounded bg-white/5">React/Redux</span>
+              <span class="px-2 py-0.5 rounded bg-white/5">Azure</span>
+              <span class="px-2 py-0.5 rounded bg-white/5">TDD</span>
+            </div>
+            <a href="https://paycor.com" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-400 hover:text-brand-300">
+              Visit paycor.com &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: WINT -->
+        <div class="p-6 rounded-2xl glass-card glass-card-hover flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5">Sweden Fintech • 2021–2024</span>
+              <span class="text-xs font-mono text-slate-400">Senior Engineer</span>
+            </div>
+            <h3 class="text-xl font-bold text-white">WINT Financial System</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Sweden's flagship automated accounting engine. Engineered real-time microservices with Azure Service Bus messaging, Docker containerization, React UI, and Xamarin mobile components.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/5 space-y-3">
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-300">
+              <span class="px-2 py-0.5 rounded bg-white/5">.NET Core</span>
+              <span class="px-2 py-0.5 rounded bg-white/5">Service Bus</span>
+              <span class="px-2 py-0.5 rounded bg-white/5">Docker</span>
+              <span class="px-2 py-0.5 rounded bg-white/5">React</span>
+            </div>
+            <a href="https://wint.se" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-400 hover:text-brand-300">
+              Visit wint.se &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4: GesDoc 3D Viewer -->
+        <div class="p-6 rounded-2xl glass-card glass-card-hover flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5">Healthcare • Portugal</span>
+              <span class="text-xs font-mono text-slate-400">Lead Programmer</span>
+            </div>
+            <h3 class="text-xl font-bold text-white">GesDoc 3D Medical Viewer</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Web-based clinical diagnostic and medical document system featuring a customized Three.js WebGL 3D medical visualizer for high-precision diagnostic insights.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/5">
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-300">
+              <span class="px-2 py-0.5 rounded bg-white/5">Three.js</span>
+              <span class="px-2 py-0.5 rounded bg-white/5">WebGL</span>
+              <span class="px-2 py-0.5 rounded bg-white/5">ASP.NET Core</span>
+              <span class="px-2 py-0.5 rounded bg-white/5">Angular</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Motelink IoT -->
+        <div class="p-6 rounded-2xl glass-card glass-card-hover flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5">Smart IoT • Spain</span>
+              <span class="text-xs font-mono text-slate-400">Co-Lead</span>
+            </div>
+            <h3 class="text-xl font-bold text-white">Motelink Smart Hotels</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Multi-floor hotel management system integrating Azure IoT Hub for real-time remote telemetry and automation of smart doors, lighting, and guest access systems.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/5">
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-300">
+              <span class="px-2 py-0.5 rounded bg-white/5">Azure IoT Hub</span>
+              <span class="px-2 py-0.5 rounded bg-white/5">ASP.NET Web API</span>
+              <span class="px-2 py-0.5 rounded bg-white/5">Angular</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Geminys4 Metro Madrid -->
+        <div class="p-6 rounded-2xl glass-card glass-card-hover flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <span class="text-xs font-mono text-slate-400 px-2 py-0.5 rounded bg-white/5">Transit • Spain</span>
+              <span class="text-xs font-mono text-brand-400">Early Delivery</span>
+            </div>
+            <h3 class="text-xl font-bold text-white">Geminys4 (Metro Madrid)</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">
+              Custom operations management system tailored for Metro Madrid's internal scheduling and maintenance. Delivered a full month ahead of stringent deadlines.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/5">
+            <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-300">
+              <span class="px-2 py-0.5 rounded bg-white/5">ASP.NET MVC</span>
+              <span class="px-2 py-0.5 rounded bg-white/5">C#</span>
+              <span class="px-2 py-0.5 rounded bg-white/5">SQL Server</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Additional notable enterprise apps list -->
+      <div class="p-6 rounded-2xl glass-card border border-white/5 space-y-4">
+        <h4 class="text-base font-semibold text-white">Additional Production Deployments:</h4>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs text-slate-300 font-mono">
+          <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+            <div class="text-white font-bold font-sans text-sm">ISO Standard App</div>
+            <div class="text-slate-400 text-[11px]">SonarQube & Azure CI/CD</div>
+          </div>
+          <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+            <div class="text-white font-bold font-sans text-sm">Ortomed Diagnose</div>
+            <div class="text-slate-400 text-[11px]">European Dental Suite</div>
+          </div>
+          <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+            <div class="text-white font-bold font-sans text-sm">Geseme Solution</div>
+            <div class="text-slate-400 text-[11px]">Real-time SignalR Hub</div>
+          </div>
+          <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+            <div class="text-white font-bold font-sans text-sm">Navotar Fleet Suite</div>
+            <div class="text-slate-400 text-[11px]">Cordova, Android & iOS</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Awards & Recognitions -->
+  <section id="awards" class="py-24 px-6 relative z-10 border-t border-white/5">
+    <div class="max-w-7xl mx-auto space-y-12">
+      
+      <div class="text-center space-y-3">
+        <span class="text-brand-gold font-mono text-xs uppercase tracking-widest font-semibold">Honors & Accolades</span>
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight">National & Global Recognition</h2>
+        <p class="text-slate-400 text-sm max-w-xl mx-auto">Awards won for technical excellence, architectural sophistication, and digital platform impact.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Award 1 -->
+        <div class="rounded-3xl glass-card overflow-hidden border border-brand-gold/20 flex flex-col justify-between group">
+          <div class="p-6 space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-brand-gold/10 text-brand-gold flex items-center justify-center">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div>
+              <span class="text-xs font-mono text-brand-gold uppercase tracking-wider block">Global Excellence Awards • 2026</span>
+              <h3 class="text-xl font-bold text-white mt-1">Best Gifting Website</h3>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Awarded to Zonova (zonova.lk) for pioneering multi-vendor gifting innovation, seamless checkout experience, and generative AI customization.
+            </p>
+          </div>
+          <div class="p-3 bg-white/5 border-t border-white/5">
+            <img src="/images/global-excellence-award.jpg" alt="Global Excellence Award" class="w-full h-44 object-cover rounded-xl" />
+          </div>
+        </div>
+
+        <!-- Award 2 -->
+        <div class="rounded-3xl glass-card overflow-hidden border border-brand-400/20 flex flex-col justify-between group">
+          <div class="p-6 space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-brand-400/10 text-brand-400 flex items-center justify-center">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 15.2a3.2 3.2 0 100-6.4 3.2 3.2 0 000 6.4z"/><path d="M9 2L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2H9zm3 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></svg>
+            </div>
+            <div>
+              <span class="text-xs font-mono text-brand-400 uppercase tracking-wider block">BestWeb.lk 2026 • LK Domain Registry</span>
+              <h3 class="text-xl font-bold text-white mt-1">Best Micro Website (Gold)</h3>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Adjudged the #1 Best Micro Enterprise Website in Sri Lanka for superior performance, responsive architecture, security, and design standards.
+            </p>
+          </div>
+          <div class="p-3 bg-white/5 border-t border-white/5">
+            <img src="/images/bestweb-award.jpg" alt="BestWeb.lk Ceremony" class="w-full h-44 object-cover rounded-xl" />
+          </div>
+        </div>
+
+        <!-- Award 3 -->
+        <div class="rounded-3xl glass-card overflow-hidden border border-brand-electric/20 flex flex-col justify-between group">
+          <div class="p-6 space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-brand-electric/10 text-brand-electric flex items-center justify-center">
+              <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <div>
+              <span class="text-xs font-mono text-brand-electric uppercase tracking-wider block">BestWeb.lk 2026 • Public Vote</span>
+              <h3 class="text-xl font-bold text-white mt-1">Most Popular Micro Website</h3>
+            </div>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Voted the Most Popular Website in Sri Lanka by customers and users across the island in the micro-enterprises category.
+            </p>
+          </div>
+          <div class="p-3 bg-white/5 border-t border-white/5">
+            <img src="/images/popular-award.png" alt="Most Popular Award" class="w-full h-44 object-contain rounded-xl bg-dark-900 p-2" />
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Education & Credentials Section -->
+  <section id="education" class="py-24 px-6 relative z-10 border-t border-white/5 bg-dark-900/40">
+    <div class="max-w-7xl mx-auto space-y-16">
+      
+      <div class="text-center space-y-3">
+        <span class="text-brand-400 font-mono text-xs uppercase tracking-widest font-semibold">Academic Foundation</span>
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight">Education & Accreditations</h2>
+        <p class="text-slate-400 text-sm max-w-xl mx-auto">Grounded in rigorous computer science engineering, complemented by business leadership and AI specializations.</p>
+      </div>
+
+      <!-- Completed Degrees & Professional Diplomas -->
+      <div class="space-y-6">
+        <h3 class="text-lg font-bold font-display text-white flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-brand-400"></span>
+          Conferred Degrees & Diplomas
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Degree 1 -->
+          <div class="p-6 rounded-2xl glass-card space-y-3 border-l-4 border-brand-500">
+            <div class="text-xs font-mono text-brand-400">Bachelor of Science of Engineering (Honours)</div>
+            <h4 class="text-xl font-bold text-white">Computer Science & Engineering</h4>
+            <div class="text-sm text-slate-300">University of Moratuwa, Sri Lanka</div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Graduated with Pass (2.9 GPA) following a comprehensive engineering curriculum in algorithms, system architecture, data structures, and distributed systems.
+            </p>
+            <div class="text-[11px] font-mono text-slate-400 pt-2 border-t border-white/5">
+              Registration: 100006B • Football, CSE Art Club
+            </div>
+          </div>
+
+          <!-- Diploma 1 -->
+          <div class="p-6 rounded-2xl glass-card space-y-3 border-l-4 border-brand-electric">
+            <div class="text-xs font-mono text-brand-electric">Executive Diploma</div>
+            <h4 class="text-xl font-bold text-white">Business Communication</h4>
+            <div class="text-sm text-slate-300">Athena Global Education / UniAthena (FEDE)</div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Level 5 qualification completed with 90 / 100 marks covering Cross-Cultural Communication, Analytical Reporting, and Executive Proposals.
+            </p>
+            <div class="text-[11px] font-mono text-slate-400 pt-2 border-t border-white/5">
+              Blockchain ID: 1755-7293-3361 • CR648
+            </div>
+          </div>
+
+          <!-- Diploma 2 -->
+          <div class="p-6 rounded-2xl glass-card space-y-3 border-l-4 border-brand-gold">
+            <div class="text-xs font-mono text-brand-gold">Professional Diploma (Merit Pass)</div>
+            <h4 class="text-xl font-bold text-white">Diploma in Photography</h4>
+            <div class="text-sm text-slate-300">University of Kelaniya, Sri Lanka</div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Studied photographic imaging, visual communication, and dissertation. Also served as technical developer for the unit's web presence.
+            </p>
+            <div class="text-[11px] font-mono text-slate-400 pt-2 border-t border-white/5">
+              Student ID: PHG/2017/027 • Merit Pass
+            </div>
+          </div>
+
+          <!-- Diploma 3 -->
+          <div class="p-6 rounded-2xl glass-card space-y-3 border-l-4 border-brand-400">
+            <div class="text-xs font-mono text-brand-400">Alison Professional Certification</div>
+            <h4 class="text-xl font-bold text-white">Applied Generative AI</h4>
+            <div class="text-sm text-slate-300">Alison</div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Completed with high distinction (97% Grade) on practical implementation of LLM prompts, agent pipelines, and enterprise generative integrations.
+            </p>
+            <div class="text-[11px] font-mono text-slate-400 pt-2 border-t border-white/5">
+              Grade: 97% • Oct 2026
+            </div>
+          </div>
+
+          <!-- Diploma 4 -->
+          <div class="p-6 rounded-2xl glass-card space-y-3 border-l-4 border-slate-500">
+            <div class="text-xs font-mono text-slate-400">Alison Professional Certification</div>
+            <h4 class="text-xl font-bold text-white">Operations Management</h4>
+            <div class="text-sm text-slate-300">Alison</div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Completed with 90% Grade on process optimization, supply chain efficiency, quality control, and executive operational planning.
+            </p>
+            <div class="text-[11px] font-mono text-slate-400 pt-2 border-t border-white/5">
+              Grade: 90% • Verify: alison.com/verify/c71fd198b9
+            </div>
+          </div>
+
+          <!-- Secondary Education -->
+          <div class="p-6 rounded-2xl glass-card space-y-3 border-l-4 border-slate-600">
+            <div class="text-xs font-mono text-slate-400">G.C.E. Advanced Level (Maths Stream)</div>
+            <h4 class="text-xl font-bold text-white">St. Anne's College, Kurunegala</h4>
+            <div class="text-sm text-slate-300">Z-Score: 2.1364 • Island Rank 469</div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+              Secured competitive admission to state university engineering faculty across Combined Mathematics, Physics, and Chemistry.
+            </p>
+            <div class="text-[11px] font-mono text-slate-400 pt-2 border-t border-white/5">
+              College Football Team Player
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Professional Certifications Showcase -->
+      <div class="space-y-6">
+        <h3 class="text-lg font-bold font-display text-white flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-brand-electric"></span>
+          Verified Technical Certifications
+        </h3>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div class="p-4 rounded-xl glass-card text-center space-y-2">
+            <div class="text-brand-400 font-mono text-xs font-bold">Google Cloud</div>
+            <div class="text-sm font-semibold text-white">Google AI Essentials</div>
+            <div class="text-[10px] text-slate-400 font-mono">ID: Mv5XDK18GB</div>
+          </div>
+          <div class="p-4 rounded-xl glass-card text-center space-y-2">
+            <div class="text-brand-electric font-mono text-xs font-bold">The Open Univ</div>
+            <div class="text-sm font-semibold text-white">GICAST Cyber Training</div>
+            <div class="text-[10px] text-slate-400 font-mono">Issued Oct 2026</div>
+          </div>
+          <div class="p-4 rounded-xl glass-card text-center space-y-2">
+            <div class="text-brand-gold font-mono text-xs font-bold">IBM</div>
+            <div class="text-sm font-semibold text-white">Python for AI & Data</div>
+            <div class="text-[10px] text-slate-400 font-mono">Issued Jun 2024</div>
+          </div>
+          <div class="p-4 rounded-xl glass-card text-center space-y-2">
+            <div class="text-brand-400 font-mono text-xs font-bold">Google</div>
+            <div class="text-sm font-semibold text-white">Responsible AI</div>
+            <div class="text-[10px] text-slate-400 font-mono">Issued Mar 2024</div>
+          </div>
+          <div class="p-4 rounded-xl glass-card text-center space-y-2">
+            <div class="text-[#0089d6] font-mono text-xs font-bold">Microsoft</div>
+            <div class="text-sm font-semibold text-white">Azure Fundamentals</div>
+            <div class="text-[10px] text-slate-400 font-mono">Certified 2021</div>
+          </div>
+          <div class="p-4 rounded-xl glass-card text-center space-y-2">
+            <div class="text-brand-electric font-mono text-xs font-bold">The Open Univ</div>
+            <div class="text-sm font-semibold text-white">Postgraduate Study</div>
+            <div class="text-[10px] text-slate-400 font-mono">Issued Oct 2026</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- In-Progress Education (Moved cleanly to the end) -->
+      <div class="p-6 rounded-2xl glass-card border border-white/5 space-y-4">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-slate-500"></span>
+          <h4 class="text-sm font-mono uppercase tracking-wider text-slate-400 font-semibold">Continuing / In-Progress Studies</h4>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+          <div class="p-4 rounded-xl bg-white/5 border border-white/5 space-y-1">
+            <div class="flex items-center justify-between">
+              <div class="font-bold text-white">Master of Science (MSc) in Information Security</div>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-white/10 text-slate-300">In Progress</span>
+            </div>
+            <div class="text-xs text-brand-400">Asia e University (Commenced March 2026)</div>
+            <p class="text-xs text-slate-400 pt-1">
+              Curriculum focus on Information Security Governance, Cybersecurity Frameworks, Data Protection, and Enterprise IT Auditing.
+            </p>
+          </div>
+          <div class="p-4 rounded-xl bg-white/5 border border-white/5 space-y-1">
+            <div class="flex items-center justify-between">
+              <div class="font-bold text-white">Master of Business Administration (MBA)</div>
+              <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-white/10 text-slate-300">In Progress</span>
+            </div>
+            <div class="text-xs text-brand-400">PSBU International (Commenced February 2026)</div>
+            <p class="text-xs text-slate-400 pt-1">
+              General business management focus on Corporate Strategy, Technology Scaling, and Executive Organization.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Technical Skills Matrix -->
+  <section id="skills" class="py-24 px-6 relative z-10">
+    <div class="max-w-7xl mx-auto space-y-12">
+      
+      <div class="text-center space-y-3">
+        <span class="text-brand-400 font-mono text-xs uppercase tracking-widest font-semibold">Core Proficiencies</span>
+        <h2 class="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight">Technology & Architectural Stack</h2>
+        <p class="text-slate-400 text-sm max-w-xl mx-auto">Mastery across full-stack engineering, cloud infrastructure, AI models, and governance.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-6 rounded-2xl glass-card space-y-4">
+          <h3 class="text-base font-bold text-white flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-brand-400"></span> Backend & Cloud
+          </h3>
+          <ul class="space-y-2 text-xs font-mono text-slate-300">
+            <li class="flex items-center justify-between"><span>ASP.NET Core / C#</span><span class="text-brand-400">Expert</span></li>
+            <li class="flex items-center justify-between"><span>Microservices Architecture</span><span class="text-brand-400">Expert</span></li>
+            <li class="flex items-center justify-between"><span>Microsoft Azure / Service Bus</span><span class="text-brand-400">Advanced</span></li>
+            <li class="flex items-center justify-between"><span>SignalR & Real-time Sockets</span><span class="text-brand-400">Advanced</span></li>
+            <li class="flex items-center justify-between"><span>Docker Containers</span><span class="text-slate-400">Proficient</span></li>
+            <li class="flex items-center justify-between"><span>CI/CD & SonarQube</span><span class="text-brand-400">Advanced</span></li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-2xl glass-card space-y-4">
+          <h3 class="text-base font-bold text-white flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-brand-electric"></span> Frontend & Mobile
+          </h3>
+          <ul class="space-y-2 text-xs font-mono text-slate-300">
+            <li class="flex items-center justify-between"><span>React.js / Redux</span><span class="text-brand-400">Expert</span></li>
+            <li class="flex items-center justify-between"><span>TypeScript & Modern JS</span><span class="text-brand-400">Expert</span></li>
+            <li class="flex items-center justify-between"><span>Angular / AngularJS</span><span class="text-brand-400">Advanced</span></li>
+            <li class="flex items-center justify-between"><span>Capacitor / Ionic</span><span class="text-brand-400">Advanced</span></li>
+            <li class="flex items-center justify-between"><span>Three.js / WebGL 3D</span><span class="text-slate-400">Proficient</span></li>
+            <li class="flex items-center justify-between"><span>Tailwind & Responsive CSS</span><span class="text-brand-400">Expert</span></li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-2xl glass-card space-y-4">
+          <h3 class="text-base font-bold text-white flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-brand-gold"></span> AI & Data Systems
+          </h3>
+          <ul class="space-y-2 text-xs font-mono text-slate-300">
+            <li class="flex items-center justify-between"><span>Google Gemini API</span><span class="text-brand-400">Production</span></li>
+            <li class="flex items-center justify-between"><span>LLM Agentic Workflows</span><span class="text-brand-400">Advanced</span></li>
+            <li class="flex items-center justify-between"><span>Microsoft SQL Server</span><span class="text-brand-400">Expert</span></li>
+            <li class="flex items-center justify-between"><span>Cloud Firestore / NoSQL</span><span class="text-brand-400">Advanced</span></li>
+            <li class="flex items-center justify-between"><span>Python for Data Science</span><span class="text-slate-400">Certified</span></li>
+            <li class="flex items-center justify-between"><span>SISEPUEDE Climate Engine</span><span class="text-brand-400">Expert</span></li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-2xl glass-card space-y-4">
+          <h3 class="text-base font-bold text-white flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-white"></span> Leadership & Security
+          </h3>
+          <ul class="space-y-2 text-xs font-mono text-slate-300">
+            <li class="flex items-center justify-between"><span>Technical Roadmapping</span><span class="text-brand-400">Executive</span></li>
+            <li class="flex items-center justify-between"><span>Agile / Scrum Governance</span><span class="text-brand-400">Mastery</span></li>
+            <li class="flex items-center justify-between"><span>Information Security</span><span class="text-slate-400">Postgrad</span></li>
+            <li class="flex items-center justify-between"><span>Data Governance & Audit</span><span class="text-slate-400">Advanced</span></li>
+            <li class="flex items-center justify-between"><span>Test-Driven Dev (TDD)</span><span class="text-brand-400">Enforced</span></li>
+            <li class="flex items-center justify-between"><span>Code Review Mentorship</span><span class="text-brand-400">11+ Years</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 px-6 relative z-10 border-t border-white/5 bg-dark-900/60">
+    <div class="max-w-4xl mx-auto text-center space-y-8">
+      
+      <div class="space-y-3">
+        <span class="text-brand-400 font-mono text-xs uppercase tracking-widest font-semibold">Connect Directly</span>
+        <h2 class="text-3xl sm:text-5xl font-display font-bold text-white tracking-tight">Let’s Build Something Remarkable</h2>
+        <p class="text-slate-400 text-sm sm:text-base max-w-xl mx-auto">
+          Whether you require fractional CTO leadership, enterprise software architecture, or climate modelling consulting, I'd welcome a conversation.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+        
+        <a href="mailto:watchsameera@gmail.com" class="p-6 rounded-2xl glass-card glass-card-hover text-center space-y-2 group block">
+          <div class="w-10 h-10 mx-auto rounded-xl bg-white/5 text-brand-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          </div>
+          <div class="text-xs font-mono text-slate-400">Email Directly</div>
+          <div class="text-sm font-semibold text-white break-all">watchsameera@gmail.com</div>
+        </a>
+
+        <a href="https://linkedin.com/in/sameeraje" target="_blank" class="p-6 rounded-2xl glass-card glass-card-hover text-center space-y-2 group block">
+          <div class="w-10 h-10 mx-auto rounded-xl bg-white/5 text-[#0077b5] flex items-center justify-center group-hover:scale-110 transition-transform">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </div>
+          <div class="text-xs font-mono text-slate-400">LinkedIn Network</div>
+          <div class="text-sm font-semibold text-white">linkedin.com/in/sameeraje</div>
+        </a>
+
+        <a href="https://wa.me/94710433228" target="_blank" class="p-6 rounded-2xl glass-card glass-card-hover text-center space-y-2 group block">
+          <div class="w-10 h-10 mx-auto rounded-xl bg-white/5 text-brand-500 flex items-center justify-center group-hover:scale-110 transition-transform">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          </div>
+          <div class="text-xs font-mono text-slate-400">WhatsApp / Direct Line</div>
+          <div class="text-sm font-semibold text-white">+94 71 043 3228</div>
+        </a>
+
+      </div>
+
+      <div class="pt-8">
+        <a href="Sameera_Rukshan_CV.pdf" download class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-brand-500 hover:bg-brand-400 text-dark-950 font-semibold text-sm shadow-xl shadow-brand-500/20 transition-all hover:scale-105">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+          Download Formal Resume (PDF)
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 px-6 border-t border-white/5 text-center text-xs font-mono text-slate-500">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-brand-500"></span>
+        <span>© 2026 Sameera Rukshan. Published on <a href="https://sameera.zonova.lk" class="text-slate-400 hover:text-white">sameera.zonova.lk</a></span>
+      </div>
+      <div>
+        Registered with Zonova (Pvt) Ltd • PV00335298
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
